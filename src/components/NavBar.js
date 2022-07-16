@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
@@ -29,6 +30,7 @@ export const NavBar = () => {
   }
 
   return (
+    <>
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
@@ -54,5 +56,6 @@ export const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </>
   )
 }
